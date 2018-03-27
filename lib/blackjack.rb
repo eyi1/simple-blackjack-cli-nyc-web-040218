@@ -50,6 +50,9 @@ def invalid_command
   puts "Please enter a valid command"
   prompt_user
   get_user_input
+  hits?(card_total)
+  display_card_total(card_total)
+  
   # code invalid_command here
 end
 
