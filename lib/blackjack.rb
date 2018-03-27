@@ -50,9 +50,7 @@ def invalid_command
   puts "Please enter a valid command"
   prompt_user
   get_user_input
-  hits?(card_total)
-  display_card_total(card_total)
-  
+
   # code invalid_command here
 end
 
@@ -64,4 +62,9 @@ def runner
   welcome
   initial_round
 
+  until initial_round > 21
+    hits?
+    display_card_total
+  end 
+end_game
 end
